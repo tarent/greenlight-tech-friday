@@ -73,18 +73,11 @@
             margin-bottom: 0.5rem; }
             /* line 77, cookie-consent.scss */
             .cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-primary {
-              background-color: #3579F6;
+              background-color: #bb242a;
               color: white; }
               /* line 81, cookie-consent.scss */
               .cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-primary:hover {
-                background-color: #0b5bed; }
-            /* line 87, cookie-consent.scss */
-            .cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-secondary {
-              background-color: #89a;
-              color: white; }
-              /* line 91, cookie-consent.scss */
-              .cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-secondary:hover {
-                background-color: #6a8095; }
+                background-color: #901c20; }
   @media screen and (max-width: 620px) {
     /* line 102, cookie-consent.scss */
     .cookie-consent-modal .btn {
