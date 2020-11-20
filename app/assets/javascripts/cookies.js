@@ -25,6 +25,8 @@ $(document).on('turbolinks:load', function(){
     $(".cookies-banner").attr("style","display:none !important")
   })
 
+  window.cookieConsent = new CookieConsent({privacyPolicyUrl: "/datenschutz.html"})
+
   $("#maintenance-close").click(function(event) {
     //create a cookie that lasts 1 day
 
