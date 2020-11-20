@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+
+git fetch origin
+git checkout -B master origin/master
+
+./scripts/image_build.sh greenlight-tech-friday release-v2
+docker image prune --force
+
+docker-compose down
+docker-compose up -d
+docker-compose logs -f
