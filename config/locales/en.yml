@@ -90,7 +90,7 @@ en:
         title: Maintenance Banner
         display: Set
         clear: Clear
-        time: "Example: Update scheduled on December 13 @ 23:00 ET. Users may experience problems signing in."        
+        time: "Example: Update scheduled on December 13 @ 23:00 ET. Users may experience problems signing in."
       preupload:
         info: Users can preupload a presentation to be used as the default presentation for that specific room
         title: Allow Users to Preupload Presentations
@@ -544,9 +544,9 @@ en:
       fail: Failed to delete room (%{error})
     enter_the_access_code: Enter the room's access code
     invalid_provider: You have entered an invalid url. Please check the url and try again.
-    invitation_description: You have been invited to join %{name} using BigBlueButton. To join, click the link above and enter your name.  
+    invitation_description: You have been invited to join %{name} using BigBlueButton. To join, click the link above and enter your name.
     invited: You have been invited to join
-    recording_present: I acknowledge that this session is going to be recorded. This may include my voice and video if enabled.
+    recording_present: I acknowledge that this session is going to be recorded. I agree that my voice and video will be recorded if enabled. [Hinweis zur Veröffentlichung]. Unused recordings will be deleted after 24 hours.
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}
