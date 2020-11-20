@@ -17,6 +17,4 @@ Rails.application.config.assets.precompile += %w(_primary_theme.scss
                                                  pickr.min.js
                                                  monolith.min.scss
                                                  bootstrap-select.min.js
-                                                 bootstrap-select.min.css
-                                                 cookie-consent.js
-                                                 cookie-consent.css)
+                                                 bootstrap-select.min.css)

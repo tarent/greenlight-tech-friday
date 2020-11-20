@@ -35,5 +35,4 @@
 //= require jquery-ui/widgets/sortable
 //= require pickr.min.js
 //= require bootstrap-select.min.js
-//= require cookie-consent.js
 //= require_tree .
