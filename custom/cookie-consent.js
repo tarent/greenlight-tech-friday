@@ -31,7 +31,7 @@ function CookieConsent(props) {
                 buttonAcceptAll: "Accept",
             }
         },
-        cookieName: "cookie-consent-given",  // the name of the cookie, the cookie is `true` if tracking was accepted
+        cookieName: "cookie-consent-given",  // the name of the cookie, the cookie is `true` if accepted
         modalId: "cookieConsentModal" // the id of the modal dialog element
     }
     for (var property in props) {
@@ -138,10 +138,6 @@ function CookieConsent(props) {
     this.reset = function () {
         removeCookie(this.props.cookieName)
         showDialog()
-    }
-
-    this.trackingAllowed = function () {
-        return getCookie(this.props.cookieName) === "true"
     }
 
 }
