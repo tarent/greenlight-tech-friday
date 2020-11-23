@@ -3,12 +3,45 @@
 set -o errexit
 set -o nounset
 
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+__file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
+__base="$(basename ${__file} .sh)"
+
+deploy_assets=false
+deploy_greenlight=false
+while getopts "ag" opt; do
+  case ${opt} in
+    a ) deploy_assets=true
+      ;;
+    g ) deploy_greenlight=true
+      ;;
+    \? ) echo "Usage: ${__base} [-a] [-g]"
+         exit 1
+      ;;
+  esac
+done
+
+echo "# Checking out changes from Git"
 git fetch origin
 git checkout -B master origin/master
 
-./scripts/image_build.sh greenlight-tech-friday release-v2
-docker image prune --force
+if [ "${deploy_assets}" = "true" ]; then
+  echo "# Deploying assets"
+  cp --verbose "${__dir}/custom/cookie-consent.css" /var/www/bigbluebutton-default/
+  cp --verbose "${__dir}/custom/cookie-consent.js" /var/www/bigbluebutton-default/
+  cp --verbose "${__dir}/custom/datenschutz.html" /var/www/bigbluebutton-default/
+  cp --verbose "${__dir}/custom/default.pdf" /var/www/bigbluebutton-default/
+  cp --verbose "${__dir}/custom/default.pptx" /var/www/bigbluebutton-default/
+  cp --verbose "${__dir}/custom/favicon.ico" /var/www/bigbluebutton-default/
+  cp --verbose "${__dir}/custom/favicon.png" /var/www/bigbluebutton-default/images/
+  cp --verbose "${__dir}/custom/index.html" /var/www/bigbluebutton-default/
+fi
 
-docker-compose down
-docker-compose up -d
-docker-compose logs -f
+if [ "${deploy_greenlight}" = "true" ]; then
+  echo "# Deploying Greenlight"
+  ./scripts/image_build.sh greenlight-tech-friday release-v2
+  docker image prune --force
+  docker-compose down
+  docker-compose up -d
+  docker-compose logs -f
+fi
