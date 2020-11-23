@@ -18,14 +18,14 @@ function CookieConsent(props) {
         content: { // the content in all needed languages
             de: {
                 title: "Cookies",
-                body: "Wir nutzen für die Funktion der Website notwendige Cookies. " +
+                body: "Wir nutzen nur für die Funktion der Website notwendige Cookies. " +
                     "Weitere Informationen finden Sie in unserer --privacy-policy--.",
                 privacyPolicy: "Datenschutzerklärung",
                 buttonAcceptAll: "Akzeptieren",
             },
             en: {
                 title: "Cookies",
-                body: "We use cookies that are necessary for the functioning of the website. " +
+                body: "We use only cookies that are necessary for the functioning of the website. " +
                     "For more information, please refer to our --privacy-policy--.",
                 privacyPolicy: "privacy policy",
                 buttonAcceptAll: "Accept",
