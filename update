@@ -27,13 +27,13 @@ git checkout -B master origin/master
 
 if [ "${deploy_assets}" = "true" ]; then
   echo "# Deploying assets"
-  cp --verbose "${__dir}/custom/cookie-consent.css" /var/www/bigbluebutton-default/
-  cp --verbose "${__dir}/custom/cookie-consent.js" /var/www/bigbluebutton-default/
+  cp --recursive --verbose "${__dir}/custom/css/" /var/www/bigbluebutton-default/
+  cp --recursive --verbose "${__dir}/custom/js/" /var/www/bigbluebutton-default/
+  cp --recursive --verbose "${__dir}/custom/images/" /var/www/bigbluebutton-default/
   cp --verbose "${__dir}/custom/datenschutz.html" /var/www/bigbluebutton-default/
   cp --verbose "${__dir}/custom/default.pdf" /var/www/bigbluebutton-default/
   cp --verbose "${__dir}/custom/default.pptx" /var/www/bigbluebutton-default/
   cp --verbose "${__dir}/custom/favicon.ico" /var/www/bigbluebutton-default/
-  cp --verbose "${__dir}/custom/favicon.png" /var/www/bigbluebutton-default/images/
   cp --verbose "${__dir}/custom/index.html" /var/www/bigbluebutton-default/
 fi
 

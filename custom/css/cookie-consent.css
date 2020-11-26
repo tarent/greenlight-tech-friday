@@ -10,8 +10,7 @@
   position: static;
   width: auto;
   height: auto;
-  z-index: 1000;
-  font-family: sans-serif; }
+  z-index: 1000;}
   /* line 11, cookie-consent.scss */
   .cookie-consent-modal .modal-content-wrap {
     position: fixed;
@@ -106,5 +105,3 @@
       .cookie-consent-modal.block-access .modal-content-wrap .modal-content {
         border: none;
         margin: 0 auto; }
-
-/*# sourceMappingURL=cookie-consent.css.map */
