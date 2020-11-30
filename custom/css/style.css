@@ -51,6 +51,11 @@
     .session-all-tracks {
         grid-column: track-1 / track-5-end;
     }
+
+    .legend {
+        grid-row: legend;
+        grid-column: track-1 / track-5-end;
+    }
 }
 
 .track-slot {
@@ -104,13 +109,13 @@ a:active {
 /* Sessions across all tracks */
 
 .session-all-tracks {
-    margin: 0 0 24px 10px;
+    margin: 0 0 40px 10px;
 }
 
 .session-all-tracks .session-title,
 .session-all-tracks .session-link {
     display: block;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
 }
 
 .session-all-tracks .session-title {
@@ -119,11 +124,33 @@ a:active {
 }
 
 .session-all-tracks .session-link {
-    margin: 0 0 16px 0;
+    font-size: 20px;
 }
 
-.session-all-tracks .session-link a {
-    font-size: 20px;
+/* Legend */
+
+.legend {
+    margin: 0 0 36px 10px;
+}
+
+.legend .legend-title,
+.legend .legend-line {
+    display: block;
+    margin: 0;
+    color: #4f4f4f;
+}
+
+.legend .legend-title {
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.legend .legend-line {
+    margin-bottom: 12px;
+}
+
+.legend .legend-line img {
+    margin-right: 8px;
 }
 
 /* Sessions per Track */
