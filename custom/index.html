@@ -17,6 +17,7 @@
   <script type="text/javascript">
       window.cookieConsent = new CookieConsent()
   </script>
+  <script src="js/site.js"></script>
 </head>
 <body>
 
@@ -73,7 +74,7 @@
           <img src="images/star-red.svg" alt="Roter Stern" title="Softwareentwicklungsbackground notwendig">
         </span>
       </div>
-      <h4 class="session-title"><a href="#">Azubiprojekt: t-coffee</a></h4>
+      <h4 class="session-title"><span onclick="showSession(this)">Azubiprojekt: t-coffee</span></h4>
       <span class="session-presenter">Jannik, Ella, Roman, Ivan, Katterin</span>
       <span class="session-link"><a href="https://tech-friday.tarent.de/b/adm-3w4-uxq-wqg" target="_blank">Zum Talk</a></span>
     </div>
@@ -516,7 +517,9 @@
 <p><a href="https://tech-friday.tarent.de/b/adm-q4f-d2f-utm" target="_blank">Zum Talk</a></p>
 
 <h1 id="was-funkt-denn-da">Was funkt denn da?</h1>
-<p>Eine Wetterstation mit Funkthermometer hat fast jeder zu Hause. Aber was und wie sendet die eigentlich? Und was für Sensoren senden da noch so? Wir zeigen Euch, wie ihr Euch in dem Funkspektrum zurechtfindet und was das mit Euren Autoreifen und Flugzeugen zu tun hat 😉</p>
+<p>
+  Eine Wetterstation mit Funkthermometer hat fast jeder zu Hause. Aber was und wie sendet die eigentlich? Und was für Sensoren senden da noch so? Wir zeigen Euch, wie ihr Euch in dem Funkspektrum zurechtfindet und was das mit Euren Autoreifen und Flugzeugen zu tun hat 😉
+</p>
 <p><a href="https://tech-friday.tarent.de/b/adm-wvo-qcb-cqs" target="_blank">Zum Talk</a></p>
 
 <h1 id="airquality-pi-gomulocity">AirQuality Pi + Gomulocity</h1>
@@ -543,6 +546,27 @@
     </div>
   </div>
 </footer>
+
+<div id="sessionModal" class="session-modal">
+  <div class="modal-wrap">
+    <div class="modal-content">
+      <div class="session-time-and-star">
+        <span class="session-time">14:30 - 16:00</span>
+        <span class="session-star">
+          <img src="images/star-yellow.svg" alt="Gelber Stern" title="Für Tech- und Dev-Interessierte verständlich">
+        </span>
+      </div>
+      <h4 class="session-title">Was funkt denn da?</h4>
+      <p class="session-abstract">
+        Eine Wetterstation mit Funkthermometer hat fast jeder zu Hause. Aber was und wie sendet die eigentlich? Und was für Sensoren senden da noch so? Wir zeigen Euch, wie ihr Euch in dem Funkspektrum zurechtfindet und was das mit Euren Autoreifen und Flugzeugen zu tun hat 😉
+      </p>
+      <span class="session-presenter">Daniel Zerlett, Wolfram Quester</span>
+      <span class="session-link">
+        <a href="https://tech-friday.tarent.de/b/adm-wvo-qcb-cqs" target="_blank">Zum Talk</a>
+      </span>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

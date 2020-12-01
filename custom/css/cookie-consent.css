@@ -26,7 +26,7 @@
     .cookie-consent-modal .modal-content-wrap .modal-content {
       border: 1px solid rgba(0, 0, 0, 0.2);
       background-color: #fefefe;
-      color: #123;
+      color: #212529;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
       padding: 0;
       max-width: 700px;
@@ -76,7 +76,7 @@
               color: white; }
               /* line 81, cookie-consent.scss */
               .cookie-consent-modal .modal-content-wrap .modal-content .modal-footer .buttons .btn.btn-primary:hover {
-                background-color: #202020; }
+                background-color: #212529; }
   @media screen and (max-width: 620px) {
     /* line 102, cookie-consent.scss */
     .cookie-consent-modal .btn {
