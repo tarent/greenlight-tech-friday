@@ -84,12 +84,34 @@ html {
 }
 
 body {
-    padding: 0px 24px;
-    max-width: 1600px;
-    margin: 0 auto;
     line-height: 1.15;
     color: #212529;
     background-color: white;
+}
+
+header {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    height: 98px;
+    margin: 0 0 220px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrap {
+    padding: 0px 24px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    height: 29px;
+}
+
+main {
+    padding: 0px 24px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 a,
