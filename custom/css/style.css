@@ -89,6 +89,16 @@ body {
     background-color: white;
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+    color: #4f4f4f;
+    text-decoration: underline;
+}
+
+/* Header */
+
 header {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     height: 98px;
@@ -100,7 +110,7 @@ header {
 .header-wrap {
     padding: 0px 24px;
     max-width: 1600px;
-    width: 100%;
+    flex-grow: 1;
     margin: 0 auto;
 }
 
@@ -108,24 +118,50 @@ header img {
     height: 29px;
 }
 
+/* Main */
+
 main {
     padding: 0px 24px;
     max-width: 1600px;
     margin: 0 auto;
 }
 
-a,
-a:hover,
-a:visited,
-a:active {
-    color: #4f4f4f;
-    text-decoration: underline;
-}
-
 .title {
     font-size: 52px;
     font-weight: bold;
     margin-bottom: 140px;
+}
+
+/* Footer */
+
+footer {
+    height: 98px;
+    margin: 64px 0 0 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #000000;
+}
+
+.footer-wrap {
+    padding: 0px 24px;
+    max-width: 1600px;
+    flex-grow: 1;
+    margin: 0 auto;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-wrap a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-info a {
+    margin-left: 40px;
 }
 
 /* Sessions across all tracks */
