@@ -9,7 +9,11 @@ function showSession(element) {
 
 function closeSession(event) {
     var classNames = event.target.className;
-    if (classNames.includes("session-modal") || classNames.includes("modal-wrap")) {
+    if (
+        classNames.includes("session-modal")
+        || classNames.includes("modal-wrap")
+        || classNames.includes("session-close")
+    ) {
         var modal = document.getElementById("sessionModal")
         modal.style.display = "none";
     }

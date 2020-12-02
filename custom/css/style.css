@@ -339,6 +339,8 @@ div.session:nth-of-type(6n+1) {
 .session-modal .modal-wrap .modal-content .session-title,
 .session-modal .modal-wrap .modal-content .session-abstract,
 .session-modal .modal-wrap .modal-content .session-presenter,
+.session-modal .modal-wrap .modal-content .session-link-and-close,
+.session-modal .modal-wrap .modal-content .session-close,
 .session-modal .modal-wrap .modal-content .session-link {
     display: block;
     margin: 0;
@@ -374,24 +376,36 @@ div.session:nth-of-type(6n+1) {
     color: #4f4f4f;
 }
 
-.session-modal .modal-wrap .modal-content .session-link {
-    text-align: right;
+.session-modal .modal-wrap .modal-content .session-link-and-close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
 }
 
-.session-modal .modal-wrap .modal-content .session-link a {
-    padding: 14px 42px 14px 60px;
-    border-bottom-right-radius: 18px;
-    border-top-right-radius: 18px;
-    background-image: url(../images/button_arrow.svg);
-    background-repeat: no-repeat;
-    background-position: 32px 21px;
+.session-modal .modal-wrap .modal-content .session-link-and-close .session-close {
+    padding: 12px 24px;
+    margin-right: 24px;
+    border-radius: 3px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.session-modal .modal-wrap .modal-content .session-link-and-close .session-close:hover {
+    background-color: #cc0000;
+}
+
+.session-modal .modal-wrap .modal-content .session-link-and-close .session-link a {
+    padding: 12px 24px;
+    border-radius: 3px;
+    background-color: #cc0000;
     transition: 0.3s;
     color: #ffffff;
-    display: inline-block;
-    background-color: #cc0000;
     text-decoration: none;
+    display: inline-block;
 }
 
-.session-modal .modal-wrap .modal-content .session-link a:hover {
-    background-color: #000;
+.session-modal .modal-wrap .modal-content .session-link-and-close .session-link a:hover {
+    background-color: #000000;
 }
