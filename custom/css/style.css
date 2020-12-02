@@ -270,6 +270,10 @@ div.session:nth-of-type(6n+1) {
     cursor: pointer;
 }
 
+.session .session-abstract {
+    display: none;
+}
+
 .session .session-presenter {
     font-size: 14px;
     margin-bottom: 16px;
