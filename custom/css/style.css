@@ -264,9 +264,6 @@ div.session:nth-of-type(6n+1) {
     margin-bottom: 48px;
     line-height: 1.5;
     flex-grow: 1;
-}
-
-.session .session-title span {
     cursor: pointer;
 }
 
@@ -315,6 +312,12 @@ div.session:nth-of-type(6n+1) {
     overflow: auto;
     z-index: 1000;
     display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .session-modal {
+        padding-top: 0;
+    }
 }
 
 .session-modal .modal-wrap {
@@ -379,7 +382,7 @@ div.session:nth-of-type(6n+1) {
 .session-modal .modal-wrap .modal-content .session-link-and-close {
     display: flex;
     justify-content: flex-end;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .session-modal .modal-wrap .modal-content .session-link-and-close .session-close {
@@ -392,10 +395,6 @@ div.session:nth-of-type(6n+1) {
     cursor: pointer;
 }
 
-.session-modal .modal-wrap .modal-content .session-link-and-close .session-close:hover {
-    background-color: #cc0000;
-}
-
 .session-modal .modal-wrap .modal-content .session-link-and-close .session-link a {
     padding: 12px 24px;
     border-radius: 3px;
@@ -404,8 +403,4 @@ div.session:nth-of-type(6n+1) {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
-}
-
-.session-modal .modal-wrap .modal-content .session-link-and-close .session-link a:hover {
-    background-color: #000000;
 }
