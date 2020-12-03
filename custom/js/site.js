@@ -2,7 +2,7 @@
 
 function showSession(element) {
     var modal = document.getElementById("sessionModal");
-    var sessionElement = element.parentElement;
+    var sessionElement = getSession(element);
     copyContent(".session-time")
     copyContent(".session-star")
     copyContent(".session-title")
@@ -11,6 +11,16 @@ function showSession(element) {
     copyHref(".session-link")
     modal.style.display = "block";
     modal.onclick = closeSession;
+
+    function getSession(element) {
+        if (element.className.includes("session-title")) {
+            return element.parentElement;
+        } else if (element.className.includes("session-details")) {
+            return element.parentElement.parentElement;
+        } else {
+            return null;
+        }
+    }
 
     function copyContent(className) {
         modal.querySelector(className).innerHTML = sessionElement.querySelector(className).innerHTML

@@ -133,12 +133,6 @@ main {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 1180px) {
-    .title-row {
-        margin-bottom: 128px;
-    }
-}
-
 .title {
     font-size: 52px;
     font-weight: bold;
@@ -151,6 +145,9 @@ main {
 @media screen and (max-width: 1180px) {
     .tech-friday-logo {
         display: none;
+    }
+    .title-row {
+        margin-bottom: 128px;
     }
 }
 
@@ -292,12 +289,15 @@ div.session:nth-of-type(6n+1) {
     }
 }
 
-.session .session-title,
 .session .session-header,
-.session .session-time,
 .session .session-star,
-.session .session-link,
-.session .session-presenter {
+.session .session-time,
+.session .session-title,
+.session .session-abstract,
+.session .session-presenter,
+.session .session-footer,
+.session .session-details,
+.session .session-link {
     display: block;
     margin: 0;
 }
@@ -332,8 +332,20 @@ div.session:nth-of-type(6n+1) {
     color: #4f4f4f;
 }
 
-.session .session-link {
+.session .session-footer {
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
+}
+
+.session .session-footer .session-details {
+    cursor: pointer;
+    color: #4f4f4f;
+    text-decoration: underline;
+}
+
+.session .session-footer .session-link a {
+    color: #cc0000;
 }
 
 /* Times */
