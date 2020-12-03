@@ -281,6 +281,7 @@ footer {
 
 .legend .legend-line img {
     margin-right: 8px;
+    vertical-align: top;
 }
 
 /* Sessions per track */
