@@ -102,7 +102,7 @@ a:active {
 header {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     height: 98px;
-    margin: 0 0 220px 0;
+    margin: 0 0 40px 0;
     display: flex;
     align-items: center;
 }
@@ -126,10 +126,65 @@ main {
     margin: 0 auto;
 }
 
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1180px) {
+    .title-row {
+        margin-bottom: 128px;
+    }
+}
+
 .title {
     font-size: 52px;
     font-weight: bold;
-    margin-bottom: 140px;
+}
+
+.tech-friday-logo {
+    position: relative;
+}
+
+@media screen and (max-width: 1180px) {
+    .tech-friday-logo {
+        display: none;
+    }
+}
+
+.tech-friday-logo-background {
+    width: 450px;
+    height: 450px;
+    top: 37px;
+    left: -40px;
+    position: absolute;
+    z-index: 0;
+    background-color: #f1f1f1;
+    margin: 0;
+    display: block;
+}
+
+.tech-friday-logo-frame {
+    width: 450px;
+    height: 450px;
+    top: -3px;
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    display: block;
+    border: solid 1px #d0d0d0;
+}
+
+.tech-friday-logo img {
+    vertical-align: bottom;
+    top: 72px;
+    position: relative;
+    border: solid 1px #212529;
+    background-color: #ffffff;
+    z-index: 2;
 }
 
 /* Footer */
