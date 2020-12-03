@@ -238,7 +238,7 @@ div.session:nth-of-type(6n+1) {
 }
 
 .session .session-title,
-.session .session-time-and-star,
+.session .session-header,
 .session .session-time,
 .session .session-star,
 .session .session-link,
@@ -247,7 +247,7 @@ div.session:nth-of-type(6n+1) {
     margin: 0;
 }
 
-.session .session-time-and-star {
+.session .session-header {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -336,20 +336,20 @@ div.session:nth-of-type(6n+1) {
     border: solid 0.3px #fefefe;
 }
 
-.session-modal .modal-wrap .modal-content .session-time-and-star,
+.session-modal .modal-wrap .modal-content .session-header,
 .session-modal .modal-wrap .modal-content .session-time,
 .session-modal .modal-wrap .modal-content .session-star,
 .session-modal .modal-wrap .modal-content .session-title,
 .session-modal .modal-wrap .modal-content .session-abstract,
 .session-modal .modal-wrap .modal-content .session-presenter,
-.session-modal .modal-wrap .modal-content .session-link-and-close,
+.session-modal .modal-wrap .modal-content .session-footer,
 .session-modal .modal-wrap .modal-content .session-close,
 .session-modal .modal-wrap .modal-content .session-link {
     display: block;
     margin: 0;
 }
 
-.session-modal .modal-wrap .modal-content .session-time-and-star {
+.session-modal .modal-wrap .modal-content .session-header {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -357,7 +357,7 @@ div.session:nth-of-type(6n+1) {
     margin-bottom: 16px;
 }
 
-.session-modal .modal-wrap .modal-content .session-time-and-star .session-star img {
+.session-modal .modal-wrap .modal-content .session-header .session-star img {
     vertical-align: top;
 }
 
@@ -380,13 +380,13 @@ div.session:nth-of-type(6n+1) {
     color: #4f4f4f;
 }
 
-.session-modal .modal-wrap .modal-content .session-link-and-close {
+.session-modal .modal-wrap .modal-content .session-footer {
     display: flex;
     justify-content: flex-end;
     font-size: 14px;
 }
 
-.session-modal .modal-wrap .modal-content .session-link-and-close .session-close {
+.session-modal .modal-wrap .modal-content .session-footer .session-close {
     padding: 12px 24px;
     margin-right: 24px;
     border-radius: 3px;
@@ -396,7 +396,7 @@ div.session:nth-of-type(6n+1) {
     cursor: pointer;
 }
 
-.session-modal .modal-wrap .modal-content .session-link-and-close .session-link a {
+.session-modal .modal-wrap .modal-content .session-footer .session-link a {
     padding: 12px 24px;
     border-radius: 3px;
     background-color: #cc0000;
